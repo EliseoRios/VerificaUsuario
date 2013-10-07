@@ -18,7 +18,9 @@
     }
     else
     {
-	 echo   "<h1>DATOS INCORRECTOS<h1>";
+	 echo   "<h1>DATOS INCORRECTOS</h1>";
+	 if(trim($codigo==null) || trim($contrasenia==null))
+	 echo "<p>Probablemente ha dejado un espacio vac&iacuteo</p>";
     }
 
     unset($_POST['codigo'] );
